@@ -1,0 +1,7 @@
+# Using the fancy allowlist pattern
+*
+!*/
+!.gitignore
+!README.md
+!LICENSE
+!skills/**
