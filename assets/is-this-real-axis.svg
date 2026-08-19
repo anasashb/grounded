@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" width="780"
+     font-family="ui-sans-serif,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+  <style>
+    .wash  { fill:#4a90d9; fill-opacity:0.10; }
+    .axis  { stroke:#4a90d9; stroke-width:1.5; stroke-opacity:0.75; }
+    .head  { fill:#4a90d9; }
+    .axlab { fill:#6aa3dd; font-size:13px; font-weight:600; }
+    .title { fill:#4a90d9; font-size:15px; font-weight:700; }
+    .ex    { fill:#7d8996; font-size:12.5px; }
+  </style>
+
+  <rect class="wash" x="160" y="60"  width="230" height="160" rx="3"/>
+  <rect class="wash" x="390" y="220" width="230" height="160" rx="3"/>
+
+  <line class="axis" x1="390" y1="50"  x2="390" y2="390"/>
+  <line class="axis" x1="150" y1="220" x2="630" y2="220"/>
+  <polygon class="head" points="390,44 385,56 395,56"/>
+  <polygon class="head" points="390,396 385,384 395,384"/>
+
+  <text class="axlab" x="390" y="32"  text-anchor="middle">the code is a known thing</text>
+  <text class="axlab" x="390" y="420" text-anchor="middle">the code is your own thing</text>
+  <text class="axlab" x="142" y="224" text-anchor="end">your (agent's) name</text>
+  <text class="axlab" x="638" y="224">the field's name</text>
+
+  <text class="title" x="176" y="102">Renamed for no reason</text>
+  <text class="ex"    x="176" y="124">code that runs k folds,</text>
+  <text class="ex"    x="176" y="142">shipped as a</text>
+  <text class="ex"    x="176" y="160">FoldwiseGeneralizationProtocol</text>
+
+  <text class="title" x="406" y="102">Correct use</text>
+  <text class="ex"    x="406" y="124">code that runs k folds,</text>
+  <text class="ex"    x="406" y="142">shipped as CrossValidator</text>
+
+  <text class="title" x="176" y="262">Also correct</text>
+  <text class="ex"    x="176" y="284">code that runs a custom split,</text>
+  <text class="ex"    x="176" y="302">named for what it does</text>
+
+  <text class="title" x="406" y="262">The name is lying</text>
+  <text class="ex"    x="406" y="284">code that runs one split,</text>
+  <text class="ex"    x="406" y="302">shipped as CrossValidator</text>
+</svg>
