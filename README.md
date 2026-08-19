@@ -60,3 +60,61 @@ not alone*. The skills in this repo are what I use in my day-to-day to keep my
 work ***grounded*** in reality, one adversarial question at a time, reading what
 the code does before accepting what it is called, and treating its accompanying
 documentation as a *claim* rather than a source.
+
+## is-this-real
+
+You are an ML Engineer, Data Scientist, or Data Engineer.
+
+You look at a diff showing an `OutputUncertaintyCalibrator`, with three private
+methods and ten try-excepts wrapping a `np.clip`. Somewhere else in a diff
+there's an `EnsembleStrategy` class holding one model. A +427 diff on a
+markdown file talks of a "*load-bearing*"
+`DailyFrequencyModelTrainingOrchestrator` class, which, upon inspection, seems
+to be a for loop wrapped with a try-except.
+
+Or, you're reviewing a branch called `feature/outcome-maturity-reconciliation`
+and its new code and documentation to find out that what they mean by this is
+just plain model evaluation with delayed labels. Maybe, somewhere in there there's
+a `LossAdapterResolutionPolicy` doing god-knows-what. An accompanying YAML
+file defines config-driven steps, fifth of which is called
+`entity_resolution_stage`, in reality doing a simple join between two
+dataframes.
+
+> Are any of these concepts in code, config or docs real?
+
+Probability calibration is a *real thing that exists in ML literature*, but if
+the agent implements a `np.clip` below 1.0 and calls it
+`OutputUncertaintyCalibrator`, then it's wrong. It goes the other way too. You
+look at an `ArtifactRetentionGovernancePolicy` class, convinced that the AI made
+it up, and it turns out to wrap a plain TTL method under a confusing name. And
+when your agent implements a custom, in-house business rule for filtering data
+or outputs, it will "package it" as something so formal that one would think
+this is a widely-adopted method straight from some data engineering textbook.
+
+The `is-this-real` skill tries to address these issues by making the AI agent review
+the code by *reading the implementation first*, and challenging existing naming,
+methods and documentation without trusting what the repository *claims it does*
+blindly.
+
+It looks into three issues (and conducts comprehensive web searches):
+
+- Where did this concept come from? Is it established in the field, adapted
+from something established, or local to this repository?
+- Does the implementation fit the concept? Does the code have the concept's
+defining properties, only some of them, or does the name promise behavior that
+the code does not provide?
+- What about the claims written around the concept - e.g. that a threshold is
+tuned, that an approach is standard practice, or that some benchmark was met.
+Does the evidence support the claims made by the code and/or its documentation?
+
+A simplified example of what `is-this-real` judges:
+
+![k-fold validation as a simplified example of the axes `is-this-real` judges on.](assets/is-this-real-axis.svg)
+
+Local names, or in-house logic and concepts are not a problem. The
+skill will not call a choice wrong only for being local, but will push back on
+it if it uses a name that is established for something else (even if similar).
+
+This skill relies heavily on external sources and web search and does not answer
+from memory. If it cannot find authoritative evidence, it will report this or
+that claim as unverified.
