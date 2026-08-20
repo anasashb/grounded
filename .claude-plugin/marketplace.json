@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "grounded",
+  "description": "Marketplace for Grounded, highly skeptical review skills for machine learning and data engineering.",
+  "owner": {
+    "name": "Bachana Anasashvili",
+    "url": "https://github.com/anasashb"
+  },
+  "plugins": [
+    {
+      "name": "grounded",
+      "description": "Highly skeptical review skills for machine learning and data engineering.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
