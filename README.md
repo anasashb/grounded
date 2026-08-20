@@ -70,6 +70,22 @@ documentation as a *claim* rather than a source.
 /plugin install grounded@grounded
 ```
 
+### OpenCode
+
+OpenCode has no plugin marketplace, but it discovers the same `SKILL.md`
+format from its skills directories. Clone this repository and copy the
+skills into OpenCode's global skills directory:
+
+```bash
+git clone https://github.com/anasashb/grounded.git
+mkdir -p ~/.config/opencode/skills
+cp -r grounded/skills/* ~/.config/opencode/skills/
+```
+
+To install for a single project instead, copy into that project's
+`.opencode/skills/` directory. To update, run `git pull` inside the clone
+and copy again. Restart OpenCode after installing; skills load at startup.
+
 ## is-this-real
 
 You are an ML Engineer, Data Scientist, or Data Engineer.
