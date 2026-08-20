@@ -61,6 +61,15 @@ work ***grounded*** in reality, one adversarial question at a time, reading what
 the code does before accepting what it is called, and treating its accompanying
 documentation as a *claim* rather than a source.
 
+## Install
+
+### Claude Code
+
+```bash
+/plugin marketplace add anasashb/grounded
+/plugin install grounded@grounded
+```
+
 ## is-this-real
 
 You are an ML Engineer, Data Scientist, or Data Engineer.
