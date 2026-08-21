@@ -4,6 +4,9 @@
 !.gitignore
 !README.md
 !LICENSE
+
 !skills/**
 !assets/**
+!scripts/**
+
 !.claude-plugin/**
