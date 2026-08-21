@@ -1,0 +1,16 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+jobs:
+  versions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: test -z "$(gofmt -l scripts/)"
+      - run: go vet scripts/version_check.go
+      - run: go run scripts/version_check.go
