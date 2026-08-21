@@ -14,3 +14,11 @@ jobs:
       - run: test -z "$(gofmt -l scripts/)"
       - run: go vet scripts/version_check.go
       - run: go run scripts/version_check.go
+
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: rvben/rumdl@v0
+        with:
+          report-type: annotations
