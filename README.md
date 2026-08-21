@@ -15,7 +15,8 @@ In testing: `is-this-needed`, `what-goes-where`, `make-it-make-sense`, `review`.
 You take a look at your agent's output after its autonomous session. Or worse,
 you take a look at a PR you're supposed to review. Somewhere inside some
 enormous diff, you pick out a few names: a `feature-lineage-conformance-contract-v4`,
-a `MATERIALIZE_OR_HYDRATE_POLICY` enum, and a `three-tier degraded-build fallback ladder`.
+a `MATERIALIZE_OR_HYDRATE_POLICY` enum, and a
+`three-tier degraded-build fallback ladder`.
 
 None of this feels entirely real, even though everything looks plausible. There
 are no syntax errors, there are type hints everywhere, test coverage is

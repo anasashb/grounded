@@ -4,6 +4,12 @@
 !.gitignore
 !README.md
 !LICENSE
+!.version-files.json
+
+!.github/**
+
 !skills/**
 !assets/**
+!scripts/**
+
 !.claude-plugin/**
