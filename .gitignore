@@ -14,3 +14,4 @@
 
 !.agents/**
 !.claude-plugin/**
+!.codex-plugin/**
