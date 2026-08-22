@@ -71,6 +71,13 @@ documentation as a *claim* rather than a source.
 /plugin install grounded@grounded
 ```
 
+### Codex
+
+```bash
+codex plugin marketplace add anasashb/grounded
+codex plugin add grounded@grounded
+```
+
 ## is-this-real
 
 You are an ML Engineer, Data Scientist, or Data Engineer.
