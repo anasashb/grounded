@@ -1,0 +1,7 @@
+interface:
+  display_name: "Is This Real?"
+  short_description: "Challenge misleading terminology and unsupported claims in or about code."
+  default_prompt: "Use $is-this-real to check whether this machine learning or data work uses real concepts and supported terminology."
+
+policy:
+  allow_implicit_invocation: true
