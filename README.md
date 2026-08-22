@@ -66,9 +66,16 @@ documentation as a *claim* rather than a source.
 
 ### Claude Code
 
-```bash
+```text
 /plugin marketplace add anasashb/grounded
 /plugin install grounded@grounded
+```
+
+### Codex
+
+```bash
+codex plugin marketplace add anasashb/grounded
+codex plugin add grounded@grounded
 ```
 
 ## is-this-real

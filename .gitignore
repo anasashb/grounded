@@ -12,4 +12,6 @@
 !assets/**
 !scripts/**
 
+!.agents/**
 !.claude-plugin/**
+!.codex-plugin/**

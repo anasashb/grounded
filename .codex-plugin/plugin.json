@@ -1,0 +1,33 @@
+{
+  "name": "grounded",
+  "version": "0.2.0",
+  "description": "Highly skeptical review skills for machine learning and data engineering.",
+  "author": {
+    "name": "Bachana Anasashvili",
+    "url": "https://github.com/anasashb"
+  },
+  "homepage": "https://github.com/anasashb/grounded",
+  "repository": "https://github.com/anasashb/grounded",
+  "license": "MIT",
+  "keywords": [
+    "code-review",
+    "machine-learning",
+    "data-science",
+    "data-engineering"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Grounded",
+    "shortDescription": "Skeptical review for machine learning and data work",
+    "longDescription": "Review skills for machine learning and data work. Each one treats the naming, structure, and claims in a codebase as unverified until the implementation shows otherwise.",
+    "developerName": "Bachana Anasashvili",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "websiteURL": "https://github.com/anasashb/grounded",
+    "defaultPrompt": [
+      "Check this terminology against what the code does."
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "grounded",
+  "interface": {
+    "displayName": "Grounded"
+  },
+  "plugins": [
+    {
+      "name": "grounded",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/anasashb/grounded.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
