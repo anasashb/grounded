@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "grounded",
+  "version": "0.2.0",
+  "description": "Highly skeptical review skills for machine learning and data engineering.",
+  "author": {
+    "name": "Bachana Anasashvili",
+    "url": "https://github.com/anasashb"
+  },
+  "homepage": "https://github.com/anasashb/grounded",
+  "repository": "https://github.com/anasashb/grounded",
+  "license": "MIT",
+  "keywords": [
+    "code review",
+    "is this real",
+    "terminology",
+    "unsupported claims",
+    "industry practice",
+    "benchmark claims"
+  ]
+}
