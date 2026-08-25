@@ -80,6 +80,19 @@ codex plugin add grounded@grounded
 
 ### Kiro
 
+#### Install as skills
+
+Install Grounded directly with Vercel Labs' `skills` CLI:
+
+```bash
+npx skills@latest add anasashb/grounded --agent kiro-cli --global
+```
+
+Kiro makes installed skills available automatically and as slash commands, such
+as `/is-this-real`.
+
+#### Install as a Kiro Power
+
 In the Kiro IDE:
 
 1. Open **Powers** and select **Add Custom Power**.
@@ -87,15 +100,6 @@ In the Kiro IDE:
 3. Enter `https://github.com/anasashb/grounded` and select **Install**.
 
 Kiro CLI v3 automatically detects Powers installed through the IDE.
-
-If you don't have the Kiro IDE, install the skills directly with Vercel Labs'
-`skills` CLI:
-
-```bash
-npx skills@latest add anasashb/grounded --agent kiro-cli --global
-```
-
-This installs the skills directly rather than Grounded as a Power.
 
 ## is-this-real
 
