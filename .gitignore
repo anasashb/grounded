@@ -4,6 +4,7 @@
 !.gitignore
 !README.md
 !LICENSE
+!plugin.json
 !.version-files.json
 
 !.github/**
