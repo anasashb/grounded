@@ -78,6 +78,25 @@ codex plugin marketplace add anasashb/grounded
 codex plugin add grounded@grounded
 ```
 
+### Kiro
+
+In the Kiro IDE:
+
+1. Open **Powers** and select **Add Custom Power**.
+2. Select **Import power from GitHub**.
+3. Enter `https://github.com/anasashb/grounded` and select **Install**.
+
+Kiro CLI v3 automatically detects Powers installed through the IDE.
+
+If you don't have the Kiro IDE, install the skills directly with Vercel Labs'
+`skills` CLI:
+
+```bash
+npx skills@latest add anasashb/grounded --agent kiro-cli --global
+```
+
+This installs the skills directly rather than Grounded as a Power.
+
 ## is-this-real
 
 You are an ML Engineer, Data Scientist, or Data Engineer.
