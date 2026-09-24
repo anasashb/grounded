@@ -1,0 +1,7 @@
+interface:
+  display_name: "Is This Needed?"
+  short_description: "Challenge unnecessary custom complexity."
+  default_prompt: "Use $is-this-needed to decide what outcome is required, where it belongs, and whether to keep, remove, or replace the current implementation."
+
+policy:
+  allow_implicit_invocation: true
