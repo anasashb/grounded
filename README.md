@@ -5,8 +5,7 @@ Highly skeptical review skills for machine learning and data engineering.
 | Skill | Asks |
 |---|---|
 | `is-this-real` | What does this actually do, and is its name real outside this repo? |
-
-In testing: `is-this-needed`, `what-goes-where`, `make-it-make-sense`, `review`.
+| `is-this-needed` | Does this need to exist here, and is this the right way to implement it? |
 
 ---
 
@@ -158,3 +157,22 @@ it if it uses a name that is established for something else (even if similar).
 This skill relies heavily on external sources and web search and does not answer
 from memory. If it cannot find authoritative evidence, it will report this or
 that claim as unverified.
+
+## is-this-needed
+
+Sometimes the outcome is necessary, but the implementation is not. A project
+may genuinely need experiment tracking, metrics, artifact retention, or
+deployment orchestration without needing to build those capabilities from
+scratch inside the repository.
+
+`is-this-needed` separates three questions:
+
+- Is the outcome needed now?
+- Does this responsibility belong here?
+- Is the current implementation justified, or should it be removed, moved,
+  simplified, or replaced with an existing capability?
+
+The skill actively challenges speculative abstractions and questionable custom
+infrastructure. It also checks relevant platform features, dependencies, and
+established tools—but will not recommend a large framework when a few local
+functions are already the smaller solution.
